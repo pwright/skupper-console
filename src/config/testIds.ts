@@ -12,6 +12,7 @@ export const getTestsIds = {
   biFlowView: (id: string) => `sk-bi-flow-view-${id}`,
   servicesView: () => 'sk-services-view',
   serviceView: (id: string) => `sk-service-view-${id}`,
+  dashboardView: () => 'sk-dashboard-view',
   topologyView: () => 'sk-topology-view',
   notFoundView: () => `sk-not-found-view`,
   networkErrorView: () => `sk-network-error-view`,

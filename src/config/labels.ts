@@ -5,6 +5,7 @@ export const Labels = {
   Processes: 'Processes',
   Components: 'Components',
   Services: 'Services',
+  Dashboard: 'Dashboard',
   Topology: 'Topology',
 
   Site: 'Site',
