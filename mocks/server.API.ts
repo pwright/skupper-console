@@ -1,6 +1,6 @@
 import { Response } from 'miragejs';
 
-import { extractQueryParams, filterResults, getMockData, loadData, paginateResults, sortData } from './server.utils';
+import { extractQueryParams, filterResults, getMockData, loadData, paginateResults, sortData, setCurrentVan, getCurrentVan } from './server.utils';
 import { DEFAULT_COMPLEX_STRING_SEPARATOR } from '../src/config/app';
 import { PrometheusMetricsV2 } from '../src/config/prometheus';
 import {
@@ -25,20 +25,10 @@ interface ApiProps {
 
 const ITEM_COUNT = Number(process.env.MOCK_ITEM_COUNT) || 0;
 
-// Mock data setup
-const sites = loadData<SiteResponse>('SITES');
-const components = loadData<ComponentResponse>('COMPONENTS');
-const componentPairs = loadData<PairsResponse>('COMPONENT_PAIRS');
-const processes = loadData<ProcessResponse>('PROCESSES');
-const sitePairs = loadData<PairsResponse>('SITE_PAIRS');
-const processPairs = loadData<ProcessPairsResponse>('PROCESS_PAIRS');
-const services = loadData<ServiceResponse>('SERVICES');
-const tcpConnections = loadData<ConnectorResponse>('TCP_CONNECTIONS');
-const httpRequests = loadData<ApplicationFlowResponse>('HTTP_REQUESTS');
-const links = loadData<RouterLinkResponse>('LINKS');
-const listeners = loadData<ListenerResponse>('LISTENERS');
-const connectors = loadData<ConnectorResponse>('CONNECTORS');
-const van = loadData<VanResponse>('VAN');
+// Function to get fresh data based on current VAN selection
+const getFreshData = <T>(dataType: 'SITES' | 'COMPONENTS' | 'COMPONENT_PAIRS' | 'PROCESSES' | 'SITE_PAIRS' | 'PROCESS_PAIRS' | 'SERVICES' | 'TCP_CONNECTIONS' | 'HTTP_REQUESTS' | 'LINKS' | 'LISTENERS' | 'CONNECTORS' | 'VAN') => {
+  return loadData<T>(dataType);
+};
 
 // api functions
 export const MockApi = {
@@ -53,11 +43,28 @@ export const MockApi = {
 
   logout: () => ({}),
 
-  getVan: () => ({
-    results: van.results
+  // New endpoint to set the current VAN
+  setCurrentVan: (_: unknown, { params }: ApiProps) => {
+    const vanName = params.vanName;
+    console.log(`Setting current VAN to: ${vanName}`);
+    setCurrentVan(vanName);
+    return { success: true, currentVan: vanName };
+  },
+
+  // New endpoint to get the current VAN
+  getCurrentVan: () => ({
+    currentVan: getCurrentVan()
   }),
 
+  getVan: () => {
+    const van = getFreshData<VanResponse>('VAN');
+    return {
+      results: van.results
+    };
+  },
+
   getSites: (_: unknown, { url }: ApiProps) => {
+    const sites = getFreshData<SiteResponse>('SITES');
     const sitesForPerfTests = ITEM_COUNT ? mockSitesForPerf : [];
     const results = getMockData(sites.results, ITEM_COUNT > 0, sitesForPerfTests);
 
@@ -74,11 +81,15 @@ export const MockApi = {
     };
   },
 
-  getSite: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: sites.results.find(({ identity }) => identity === id) || []
-  }),
+  getSite: (_: unknown, { params: { id } }: ApiProps) => {
+    const sites = getFreshData<SiteResponse>('SITES');
+    return {
+      results: sites.results.find(({ identity }) => identity === id) || []
+    };
+  },
 
   getLinks: (_: unknown, { queryParams }: ApiProps) => {
+    const links = getFreshData<RouterLinkResponse>('LINKS');
     const linksForPerfTests = ITEM_COUNT ? mockLinksForPerf : [];
     const results = getMockData(links.results, ITEM_COUNT > 0, linksForPerfTests);
 
@@ -92,6 +103,7 @@ export const MockApi = {
   },
 
   getComponents: (_: unknown, { url }: ApiProps) => {
+    const components = getFreshData<ComponentResponse>('COMPONENTS');
     const results = getMockData(components.results, ITEM_COUNT > 0);
     const { limit, offset, sortBy, ...filters } = extractQueryParams(url) || {};
 
@@ -106,11 +118,15 @@ export const MockApi = {
     };
   },
 
-  getComponent: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: components.results.find(({ identity }) => identity === id)
-  }),
+  getComponent: (_: unknown, { params: { id } }: ApiProps) => {
+    const components = getFreshData<ComponentResponse>('COMPONENTS');
+    return {
+      results: components.results.find(({ identity }) => identity === id)
+    };
+  },
 
   getProcesses: (_: unknown, { url }: ApiProps) => {
+    const processes = getFreshData<ProcessResponse>('PROCESSES');
     const processesForPerfTests = ITEM_COUNT ? mockProcessesForPerf : [];
     const results = getMockData(processes.results, ITEM_COUNT > 0, processesForPerfTests);
     const { limit, offset, sortBy, ...filters } = extractQueryParams(url) || {};
@@ -126,11 +142,15 @@ export const MockApi = {
     };
   },
 
-  getProcess: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: processes.results.find(({ identity }) => identity === id)
-  }),
+  getProcess: (_: unknown, { params: { id } }: ApiProps) => {
+    const processes = getFreshData<ProcessResponse>('PROCESSES');
+    return {
+      results: processes.results.find(({ identity }) => identity === id)
+    };
+  },
 
   getListeners: (_: unknown, { queryParams }: ApiProps) => {
+    const listeners = getFreshData<ListenerResponse>('LISTENERS');
     const results = getMockData(listeners.results, ITEM_COUNT > 0);
     const filteredResults = filterResults(results, queryParams);
     const paginatedResults = paginateResults(filteredResults, queryParams);
@@ -143,6 +163,7 @@ export const MockApi = {
   },
 
   getConnectors: (_: unknown, { queryParams }: ApiProps) => {
+    const connectors = getFreshData<ConnectorResponse>('CONNECTORS');
     const results = getMockData(connectors.results, ITEM_COUNT > 0);
     const filteredResults = filterResults(results, queryParams);
     const paginatedResults = paginateResults(filteredResults, queryParams);
@@ -155,6 +176,7 @@ export const MockApi = {
   },
 
   getServices: (_: unknown, { url }: ApiProps) => {
+    const services = getFreshData<ServiceResponse>('SERVICES');
     const results = getMockData(services.results, ITEM_COUNT > 0);
     const { limit, offset, sortBy, ...filters } = extractQueryParams(url) || {};
 
@@ -169,11 +191,17 @@ export const MockApi = {
     };
   },
 
-  getService: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: services.results.find(({ identity }) => identity === id)
-  }),
+  getService: (_: unknown, { params: { id } }: ApiProps) => {
+    const services = getFreshData<ServiceResponse>('SERVICES');
+    return {
+      results: services.results.find(({ identity }) => identity === id)
+    };
+  },
 
   getServiceProcessPairs: (_: unknown, { params: { id } }: ApiProps) => {
+    const processes = getFreshData<ProcessResponse>('PROCESSES');
+    const processPairs = getFreshData<ProcessPairsResponse>('PROCESS_PAIRS');
+    
     const processesByServiceIds = processes.results
       .filter(
         ({ services: processServices }) =>
@@ -194,6 +222,7 @@ export const MockApi = {
   },
 
   getSitePairs: (_: unknown, { queryParams }: ApiProps) => {
+    const sitePairs = getFreshData<PairsResponse>('SITE_PAIRS');
     const results = getMockData(sitePairs.results, ITEM_COUNT > 0);
     const filteredResults = filterResults(results, queryParams);
 
@@ -205,6 +234,7 @@ export const MockApi = {
   },
 
   getComponentPairs: (_: unknown, { queryParams }: ApiProps) => {
+    const componentPairs = getFreshData<PairsResponse>('COMPONENT_PAIRS');
     const results = getMockData(componentPairs.results, ITEM_COUNT > 0);
     const filteredResults = filterResults(results, queryParams);
 
@@ -216,6 +246,7 @@ export const MockApi = {
   },
 
   getProcessPairs: (_: unknown, { queryParams }: ApiProps) => {
+    const processPairs = getFreshData<ProcessPairsResponse>('PROCESS_PAIRS');
     const results = getMockData(processPairs.results, ITEM_COUNT > 0);
     const filteredResults = filterResults(results, queryParams);
 
@@ -227,6 +258,7 @@ export const MockApi = {
   },
 
   getProcessPair: (_: unknown, { params: { id } }: ApiProps) => {
+    const processPairs = getFreshData<ProcessPairsResponse>('PROCESS_PAIRS');
     const processPair = processPairs.results.find(({ identity }) => identity === id);
 
     return {
@@ -235,6 +267,7 @@ export const MockApi = {
   },
 
   getTcpConnections: (_: unknown, { url }: ApiProps) => {
+    const tcpConnections = getFreshData<ConnectorResponse>('TCP_CONNECTIONS');
     const results = tcpConnections.results;
     const { limit, offset, sortBy, state, ...filters } = extractQueryParams(url) || {};
 
@@ -257,6 +290,7 @@ export const MockApi = {
   },
 
   getHttpRequests: (_: unknown, { url }: ApiProps) => {
+    const httpRequests = getFreshData<ApplicationFlowResponse>('HTTP_REQUESTS');
     const results = httpRequests.results;
     const { limit, offset, sortBy, ...filters } = extractQueryParams(url) || {};
     const filteredResults = filterResults(results, { ...filters });
@@ -271,13 +305,19 @@ export const MockApi = {
     };
   },
 
-  getTcpConnection: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: tcpConnections.results.find(({ identity }) => identity === id)
-  }),
+  getTcpConnection: (_: unknown, { params: { id } }: ApiProps) => {
+    const tcpConnections = getFreshData<ConnectorResponse>('TCP_CONNECTIONS');
+    return {
+      results: tcpConnections.results.find(({ identity }) => identity === id)
+    };
+  },
 
-  getHttpRequest: (_: unknown, { params: { id } }: ApiProps) => ({
-    results: httpRequests.results.find(({ identity }) => identity === id)
-  }),
+  getHttpRequest: (_: unknown, { params: { id } }: ApiProps) => {
+    const httpRequests = getFreshData<ApplicationFlowResponse>('HTTP_REQUESTS');
+    return {
+      results: httpRequests.results.find(({ identity }) => identity === id)
+    };
+  },
 
   getPrometheusQuery: (_: unknown, { queryParams }: ApiProps) => {
     if (
@@ -351,6 +391,7 @@ for (let i = 0; i < ITEM_COUNT; i++) {
 
 const mockProcessesForPerf: ProcessResponse[] = [];
 for (let i = 0; i < ITEM_COUNT; i++) {
+  const processes = getFreshData<ProcessResponse>('PROCESSES');
   const process = processes.results[i % processes.results.length];
 
   mockProcessesForPerf.push({
@@ -370,6 +411,7 @@ for (let i = 0; i < ITEM_COUNT; i++) {
   const sourceIndex = Math.floor(Math.random() * mockProcessesForPerf.length);
   const destinationIndex = Math.floor(Math.random() * mockProcessesForPerf.length);
 
+  const sitePairs = getFreshData<PairsResponse>('SITE_PAIRS');
   mockSitePairsForPerf.push({
     ...sitePairs.results[0],
     identity: `${mockSitesForPerf[sourceIndex].identity}-to-${mockSitesForPerf[destinationIndex].identity}`,
@@ -437,6 +479,7 @@ for (let i = 0; i < ITEM_COUNT; i++) {
   const sourceIndex = Math.floor(Math.random() * mockProcessesForPerf.length);
   const destinationIndex = Math.floor(Math.random() * mockProcessesForPerf.length);
 
+  const processPairs = getFreshData<ProcessPairsResponse>('PROCESS_PAIRS');
   mockProcessPairsForPerf.push({
     ...processPairs.results[0],
     identity: `${mockProcessesForPerf[sourceIndex].identity}-to-${mockProcessesForPerf[destinationIndex].identity}`,

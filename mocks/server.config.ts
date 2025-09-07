@@ -6,6 +6,8 @@ export const MockApiPaths = {
   Logout: `${API_VERSION}/logout`,
   Sites: `${API_VERSION}/${RestResources.Sites}`,
   Van: `${API_VERSION}/${RestResources.Van}`,
+  SetCurrentVan: `${API_VERSION}/van/select/:vanName`,
+  GetCurrentVan: `${API_VERSION}/van/current`,
   Site: `${API_VERSION}/${RestResources.Sites}/:id`,
   SitePairs: `${API_VERSION}/${RestResources.SiteDataLinks}`,
   Links: `${API_VERSION}/${RestResources.RouterLinks}`,

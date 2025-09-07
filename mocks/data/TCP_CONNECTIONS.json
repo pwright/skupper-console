@@ -8,7 +8,7 @@
       "destProcessId": "a8bded1b-ee11-4d98-8f49-57bb1aea3bf7",
       "destProcessName": "redis-cart-798466874c-nq855",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "tqw2g:18",
@@ -30,10 +30,10 @@
       "sourceProcessId": "6b2f5c46-5c47-45fb-a44e-bff5f1c52daa",
       "sourceProcessName": "cartservice-5789774bf4-tdp29",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733493710913694,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["london"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["newcastle"]
     },
     {
       "connectorError": null,
@@ -78,7 +78,7 @@
       "destProcessId": "6ad23aed-2ad5-4060-8de4-7348f6c405a4",
       "destProcessName": "currencyservice-ccb8d746-5h4lj",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "s86xq:22",
@@ -102,8 +102,8 @@
       "sourceSiteId": "631f1ef0-b59e-4ed3-a98e-e850b4ca2226",
       "sourceSiteName": "malaga",
       "startTime": 1733495318066243,
-      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["malaga", "london"]
+      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["malaga", "newcastle"]
     },
     {
       "connectorError": null,
@@ -113,7 +113,7 @@
       "destProcessId": "6b2f5c46-5c47-45fb-a44e-bff5f1c52daa",
       "destProcessName": "cartservice-5789774bf4-tdp29",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "s86xq:24",
@@ -137,8 +137,8 @@
       "sourceSiteId": "631f1ef0-b59e-4ed3-a98e-e850b4ca2226",
       "sourceSiteName": "malaga",
       "startTime": 1733495318077699,
-      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["malaga", "london"]
+      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["malaga", "newcastle"]
     },
     {
       "connectorError": null,
@@ -218,7 +218,7 @@
       "destProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "destProcessName": "checkoutservice-684ff774fd-4bttd",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "s86xq:354",
@@ -242,8 +242,8 @@
       "sourceSiteId": "631f1ef0-b59e-4ed3-a98e-e850b4ca2226",
       "sourceSiteName": "malaga",
       "startTime": 1733495328663598,
-      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["malaga", "london"]
+      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["malaga", "newcastle"]
     },
     {
       "connectorError": null,
@@ -253,7 +253,7 @@
       "destProcessId": "4289e9cf-a85b-4784-8565-6cbca7eec64e",
       "destProcessName": "adservice-699bd49fc4-m9kdx",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "s86xq:36",
@@ -277,8 +277,8 @@
       "sourceSiteId": "631f1ef0-b59e-4ed3-a98e-e850b4ca2226",
       "sourceSiteName": "malaga",
       "startTime": 1733495318116739,
-      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["malaga", "london"]
+      "traceRouters": ["0/malaga-skupper-router-68665b86cd-s86xq", "0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["malaga", "newcastle"]
     },
     {
       "connectorError": null,
@@ -314,10 +314,10 @@
       "startTime": 1733495320947072,
       "traceRouters": [
         "0/malaga-skupper-router-68665b86cd-s86xq",
-        "0/london-skupper-router-758f596f49-tqw2g",
+        "0/newcastle-skupper-router-758f596f49-tqw2g",
         "0/dallas-skupper-router-dbc7f7c78-rrrpk"
       ],
-      "traceSites": ["malaga", "london", "dallas"]
+      "traceSites": ["malaga", "newcastle", "dallas"]
     },
     {
       "connectorError": null,
@@ -327,7 +327,7 @@
       "destProcessId": "a8bded1b-ee11-4d98-8f49-57bb1aea3bf7",
       "destProcessName": "redis-cart-798466874c-nq855",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "tqw2g:19",
@@ -349,10 +349,10 @@
       "sourceProcessId": "6b2f5c46-5c47-45fb-a44e-bff5f1c52daa",
       "sourceProcessName": "cartservice-5789774bf4-tdp29",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733493710913756,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["london"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["newcastle"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -384,10 +384,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733680917314627,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -419,10 +419,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681080492060,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -454,10 +454,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681209354582,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -489,10 +489,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681310543113,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -524,10 +524,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681443885546,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -559,10 +559,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681632636654,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": "proton:io (Connection refused - on connect 172.17.27.116:5000)",
@@ -594,10 +594,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733681749243492,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": null,
@@ -607,7 +607,7 @@
       "destProcessId": "6b2f5c46-5c47-45fb-a44e-bff5f1c52daa",
       "destProcessName": "cartservice-5789774bf4-tdp29",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "tqw2g:20",
@@ -629,10 +629,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733494408402028,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["london"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["newcastle"]
     },
     {
       "connectorError": null,
@@ -642,7 +642,7 @@
       "destProcessId": "6ad23aed-2ad5-4060-8de4-7348f6c405a4",
       "destProcessName": "currencyservice-ccb8d746-5h4lj",
       "destSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "destSiteName": "london",
+      "destSiteName": "newcastle",
       "duration": null,
       "endTime": 0,
       "identity": "tqw2g:24",
@@ -664,10 +664,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733494408423044,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g"],
-      "traceSites": ["london"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g"],
+      "traceSites": ["newcastle"]
     },
     {
       "connectorError": null,
@@ -699,10 +699,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733494408459026,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": null,
@@ -734,10 +734,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733494408469927,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     },
     {
       "connectorError": null,
@@ -769,10 +769,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733495328674500,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/malaga-skupper-router-68665b86cd-s86xq"],
-      "traceSites": ["london", "malaga"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/malaga-skupper-router-68665b86cd-s86xq"],
+      "traceSites": ["newcastle", "malaga"]
     },
     {
       "connectorError": null,
@@ -804,10 +804,10 @@
       "sourceProcessId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "sourceProcessName": "checkoutservice-684ff774fd-4bttd",
       "sourceSiteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "sourceSiteName": "london",
+      "sourceSiteName": "newcastle",
       "startTime": 1733494408469927,
-      "traceRouters": ["0/london-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
-      "traceSites": ["london", "dallas"]
+      "traceRouters": ["0/newcastle-skupper-router-758f596f49-tqw2g", "0/dallas-skupper-router-dbc7f7c78-rrrpk"],
+      "traceSites": ["newcastle", "dallas"]
     }
   ]
 }

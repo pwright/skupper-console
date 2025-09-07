@@ -11,7 +11,13 @@ import { apiEndpoints, API_URL } from '../config/api';
  */
 export const getUser = (): string => `${API_URL}/user`;
 export const logout = (): string => `${API_URL}/logout?nonce=${Date.now()}`;
+
+/**
+ * VAN-related endpoints.
+ */
 export const getVan = (): string => `${API_URL}/van`;
+export const setCurrentVan = (vanName: string): string => `${API_URL}/van/select/${vanName}`;
+export const getCurrentVan = (): string => `${API_URL}/van/current`;
 
 /**
  * Site-related endpoints.

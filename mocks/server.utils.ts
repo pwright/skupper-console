@@ -1,7 +1,25 @@
-import { DataMap, dataMap } from './dataMap';
+import { DataMap, dataMap, createVanSpecificDataMap } from './dataMap';
 import { ApiResponse } from '../src/types/REST.interfaces';
 
-export const loadData = <T>(fileName: keyof DataMap): ApiResponse<T[]> => dataMap[fileName] as ApiResponse<T[]>;
+// Global variable to track the currently selected VAN
+let currentSelectedVan: string = 'default';
+
+export const setCurrentVan = (vanName: string) => {
+  currentSelectedVan = vanName;
+};
+
+export const getCurrentVan = (): string => {
+  return currentSelectedVan;
+};
+
+export const loadData = <T>(fileName: keyof DataMap, vanName?: string): ApiResponse<T[]> => {
+  const selectedVan = vanName || currentSelectedVan;
+  const vanSpecificDataMap = createVanSpecificDataMap(selectedVan);
+  return vanSpecificDataMap[fileName] as ApiResponse<T[]>;
+};
+
+// Backward compatibility - use default data map
+export const loadDefaultData = <T>(fileName: keyof DataMap): ApiResponse<T[]> => dataMap[fileName] as ApiResponse<T[]>;
 
 export function extractQueryParams(url?: string): Record<string, string[]> | null {
   if (!url) {

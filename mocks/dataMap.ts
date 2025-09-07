@@ -1,15 +1,4 @@
-import componentPairsData from './data/COMPONENT_PAIRS.json';
-import componentsData from './data/COMPONENTS.json';
-import connectorsData from './data/CONNECTORS.json';
-import httpRequestsData from './data/HTTP_REQUESTS.json';
-import linksData from './data/LINKS.json';
-import listenersData from './data/LISTENERS.json';
-import processPairsData from './data/PROCESS_PAIRS.json';
-import processesData from './data/PROCESSES.json';
-import servicesData from './data/SERVICES.json';
-import sitePairsData from './data/SITE_PAIRS.json';
-import sitesData from './data/SITES.json';
-import { loadAllVanData } from './vanLoader';
+import { loadAllVanData, getVanSpecificData } from './vanLoader';
 import {
   SiteResponse,
   ComponentResponse,
@@ -69,20 +58,26 @@ const createDataEntry = <T>(data: T[] | { results: T[] } | undefined | null): Da
   };
 };
 
-const dataMap: DataMap = {
-  SITES: createDataEntry<SiteResponse>(sitesData as unknown as SitesData),
-  COMPONENTS: createDataEntry<ComponentResponse>(componentsData as unknown as ComponentsData),
-  COMPONENT_PAIRS: createDataEntry<PairsResponse>(componentPairsData as unknown as ComponentPairsData),
-  PROCESSES: createDataEntry<ProcessResponse>(processesData as unknown as ProcessesData),
-  SITE_PAIRS: createDataEntry<PairsResponse>(sitePairsData as unknown as SitePairsData),
-  PROCESS_PAIRS: createDataEntry<ProcessPairsResponse>(processPairsData as unknown as ProcessPairsData),
-  SERVICES: createDataEntry<ServiceResponse>(servicesData as unknown as ServicesData),
-  TCP_CONNECTIONS: createDataEntry<ConnectorResponse>(connectorsData as unknown as TcpConnectionsData),
-  HTTP_REQUESTS: createDataEntry<ApplicationFlowResponse>(httpRequestsData as unknown as HttpRequestsData),
-  LINKS: createDataEntry<RouterLinkResponse>(linksData as unknown as LinksData),
-  LISTENERS: createDataEntry<ListenerResponse>(listenersData as unknown as ListenersData),
-  CONNECTORS: createDataEntry<ConnectorResponse>(connectorsData as unknown as ConnectorsData),
-  VAN: createDataEntry<VanResponse>(loadAllVanData())
+// Create VAN-specific data map function
+export const createVanSpecificDataMap = (vanName: string = 'default'): DataMap => {
+  return {
+    SITES: createDataEntry<SiteResponse>(getVanSpecificData(vanName, 'SITES') as unknown as SitesData),
+    COMPONENTS: createDataEntry<ComponentResponse>(getVanSpecificData(vanName, 'COMPONENTS') as unknown as ComponentsData),
+    COMPONENT_PAIRS: createDataEntry<PairsResponse>(getVanSpecificData(vanName, 'COMPONENT_PAIRS') as unknown as ComponentPairsData),
+    PROCESSES: createDataEntry<ProcessResponse>(getVanSpecificData(vanName, 'PROCESSES') as unknown as ProcessesData),
+    SITE_PAIRS: createDataEntry<PairsResponse>(getVanSpecificData(vanName, 'SITE_PAIRS') as unknown as SitePairsData),
+    PROCESS_PAIRS: createDataEntry<ProcessPairsResponse>(getVanSpecificData(vanName, 'PROCESS_PAIRS') as unknown as ProcessPairsData),
+    SERVICES: createDataEntry<ServiceResponse>(getVanSpecificData(vanName, 'SERVICES') as unknown as ServicesData),
+    TCP_CONNECTIONS: createDataEntry<ConnectorResponse>(getVanSpecificData(vanName, 'TCP_CONNECTIONS') as unknown as TcpConnectionsData),
+    HTTP_REQUESTS: createDataEntry<ApplicationFlowResponse>(getVanSpecificData(vanName, 'HTTP_REQUESTS') as unknown as HttpRequestsData),
+    LINKS: createDataEntry<RouterLinkResponse>(getVanSpecificData(vanName, 'LINKS') as unknown as LinksData),
+    LISTENERS: createDataEntry<ListenerResponse>(getVanSpecificData(vanName, 'LISTENERS') as unknown as ListenersData),
+    CONNECTORS: createDataEntry<ConnectorResponse>(getVanSpecificData(vanName, 'CONNECTORS') as unknown as ConnectorsData),
+    VAN: createDataEntry<VanResponse>(loadAllVanData())
+  };
 };
+
+// Default data map (backward compatibility)
+const dataMap: DataMap = createVanSpecificDataMap('default');
 
 export { dataMap };

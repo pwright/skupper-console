@@ -15,6 +15,11 @@ export function loadMockServer() {
       this.get(MockApiPaths.Sites, MockApi.getSites);
       this.get(MockApiPaths.Site, MockApi.getSite);
       this.get(MockApiPaths.Van, MockApi.getVan);
+      
+      // New VAN management endpoints
+      this.post(MockApiPaths.SetCurrentVan, MockApi.setCurrentVan);
+      this.get(MockApiPaths.GetCurrentVan, MockApi.getCurrentVan);
+      
       this.get(MockApiPaths.Links, MockApi.getLinks);
       this.get(MockApiPaths.Components, MockApi.getComponents);
       this.get(MockApiPaths.Component, MockApi.getComponent);

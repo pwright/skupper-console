@@ -92,7 +92,7 @@
       "processId": "6b2f5c46-5c47-45fb-a44e-bff5f1c52daa",
       "protocol": "tcp",
       "siteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "siteName": "london",
+      "siteName": "newcastle",
       "startTime": 1733493710001311,
       "target": "cartservice-5789774bf4-tdp29"
     },
@@ -108,7 +108,7 @@
       "processId": "4289e9cf-a85b-4784-8565-6cbca7eec64e",
       "protocol": "tcp",
       "siteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "siteName": "london",
+      "siteName": "newcastle",
       "startTime": 1733493710004354,
       "target": "adservice-699bd49fc4-m9kdx"
     },
@@ -124,7 +124,7 @@
       "processId": "a8bded1b-ee11-4d98-8f49-57bb1aea3bf7",
       "protocol": "tcp",
       "siteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "siteName": "london",
+      "siteName": "newcastle",
       "startTime": 1733493710202520,
       "target": "redis-cart-798466874c-nq855"
     },
@@ -140,7 +140,7 @@
       "processId": "6ad23aed-2ad5-4060-8de4-7348f6c405a4",
       "protocol": "tcp",
       "siteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "siteName": "london",
+      "siteName": "newcastle",
       "startTime": 1733493710205551,
       "target": "currencyservice-ccb8d746-5h4lj"
     },
@@ -156,7 +156,7 @@
       "processId": "33079b7b-b9fe-45df-add1-4693f8e99105",
       "protocol": "tcp",
       "siteId": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "siteName": "london",
+      "siteName": "newcastle",
       "startTime": 1733493710208261,
       "target": "checkoutservice-684ff774fd-4bttd"
     },

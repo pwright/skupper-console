@@ -33,7 +33,9 @@ import {
   getServiceById,
   getUser,
   logout,
-  getVan
+  getVan,
+  setCurrentVan,
+  getCurrentVan
 } from './REST.endpoints';
 import { aggregateDistinctPairs, aggregateLinksBySite } from './REST.utils';
 import {
@@ -68,6 +70,14 @@ export const RESTApi = {
   // === VAN APIs ===
   fetchVan: async (options?: QueryFilters): Promise<ApiResponse<VanResponse[]>> =>
     fetchApiDataWithMapper(getVan(), options),
+  
+  // New VAN management APIs
+  setCurrentVan: async (vanName: string): Promise<{ success: boolean; currentVan: string }> =>
+    fetchApiData(setCurrentVan(vanName), { method: 'POST' }),
+  
+  getCurrentVan: async (): Promise<{ currentVan: string }> =>
+    fetchApiData(getCurrentVan()),
+
   fetchSites: async (options?: QueryFilters): Promise<ApiResponse<SiteResponse[]>> =>
     fetchApiDataWithMapper(getAllSites(), options),
 
