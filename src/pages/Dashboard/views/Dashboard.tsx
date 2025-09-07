@@ -1,81 +1,95 @@
 import { Card, CardBody, CardHeader, CardTitle, Grid, GridItem, Title } from '@patternfly/react-core';
-import { Link } from 'react-router-dom';
 
 import { Labels } from '../../../config/labels';
 import { getTestsIds } from '../../../config/testIds';
 import MainContainer from '../../../layout/MainContainer';
-import { ComponentRoutesPaths } from '../../Components/Components.enum';
-import { ProcessesRoutesPaths } from '../../Processes/Processes.enum';
-import { ServicesRoutesPaths } from '../../Services/Services.enum';
-import { SitesRoutesPaths } from '../../Sites/Sites.enum';
-import { TopologyRoutesPaths } from '../../Topology/Topology.enum';
+import { useVanData } from '../hooks/useVanData';
 
 const Dashboard = function () {
-  const navigationCards = [
-    {
-      title: 'Topology View',
-      description: 'Visualize your network topology with interactive graphs showing sites, components, and processes',
-      link: TopologyRoutesPaths.Topology,
-      icon: 'topologyIcon'
-    },
-    {
-      title: 'Services',
-      description: 'Manage and monitor your services, including HTTP requests and TCP connections',
-      link: ServicesRoutesPaths.Services,
-      icon: 'listIcon'
-    },
-    {
-      title: 'Sites',
-      description: 'View and manage your sites and their configurations',
-      link: SitesRoutesPaths.Sites,
-      icon: 'listIcon'
-    },
-    {
-      title: 'Components',
-      description: 'Monitor individual components and their performance metrics',
-      link: ComponentRoutesPaths.Components,
-      icon: 'listIcon'
-    },
-    {
-      title: 'Processes',
-      description: 'Track processes and their relationships across your network',
-      link: ProcessesRoutesPaths.Processes,
-      icon: 'listIcon'
-    }
-  ];
+  const { vanData, loading, error } = useVanData();
 
   return (
     <MainContainer
       dataTestId={getTestsIds.dashboardView()}
       title={Labels.Dashboard}
-      description="Welcome to Skupper Console. Select a view to explore your network topology and manage your services."
+      description="Virtual Application Networks Overview"
       hasMainContentPadding
       mainContentChildren={
         <div>
           <Title headingLevel="h2" size="lg" style={{ marginBottom: '2rem' }}>
-            Network Overview
+            Virtual Application Networks
           </Title>
-          <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>
-            Navigate to different sections to view detailed information about your Skupper network:
-          </p>
 
-          <Grid hasGutter>
-            {navigationCards.map((card, index) => (
-              <GridItem key={index} span={12} md={6} lg={4}>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>{card.title}</CardTitle>
-                  </CardHeader>
-                  <CardBody>
-                    <p style={{ marginBottom: '1rem' }}>{card.description}</p>
-                    <Link to={card.link} style={{ fontWeight: 'bold' }}>
-                      Go to {card.title} →
-                    </Link>
-                  </CardBody>
-                </Card>
-              </GridItem>
-            ))}
-          </Grid>
+          {/* Loading State */}
+          {loading && (
+            <Card>
+              <CardBody>
+                <p>Loading VAN information...</p>
+              </CardBody>
+            </Card>
+          )}
+
+          {/* Error State */}
+          {error && (
+            <Card>
+              <CardBody>
+                <p style={{ color: 'red' }}>Error loading VAN data: {error}</p>
+              </CardBody>
+            </Card>
+          )}
+
+          {/* VAN Cards */}
+          {vanData.length > 0 && (
+            <Grid hasGutter>
+              {vanData.map((van, index) => (
+                <GridItem key={van.identity || index} span={12} md={6} lg={4}>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>{van.vanName}</CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <Grid hasGutter>
+                        <GridItem span={6}>
+                          <div>
+                            <strong>Status:</strong> {van.status}
+                          </div>
+                        </GridItem>
+                        <GridItem span={6}>
+                          <div>
+                            <strong>Version:</strong> {van.version}
+                          </div>
+                        </GridItem>
+                        <GridItem span={6}>
+                          <div>
+                            <strong>Sites:</strong> {van.siteCount}
+                          </div>
+                        </GridItem>
+                        <GridItem span={6}>
+                          <div>
+                            <strong>Routers:</strong> {van.routerCount}
+                          </div>
+                        </GridItem>
+                        <GridItem span={12}>
+                          <div>
+                            <strong>Identity:</strong> {van.identity}
+                          </div>
+                        </GridItem>
+                      </Grid>
+                    </CardBody>
+                  </Card>
+                </GridItem>
+              ))}
+            </Grid>
+          )}
+
+          {/* No Data State */}
+          {!loading && !error && vanData.length === 0 && (
+            <Card>
+              <CardBody>
+                <p>No Virtual Application Networks found.</p>
+              </CardBody>
+            </Card>
+          )}
         </div>
       }
     />

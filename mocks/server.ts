@@ -14,6 +14,7 @@ export function loadMockServer() {
       this.get(MockApiPaths.Logout, MockApi.logout);
       this.get(MockApiPaths.Sites, MockApi.getSites);
       this.get(MockApiPaths.Site, MockApi.getSite);
+      this.get(MockApiPaths.Van, MockApi.getVan);
       this.get(MockApiPaths.Links, MockApi.getLinks);
       this.get(MockApiPaths.Components, MockApi.getComponents);
       this.get(MockApiPaths.Component, MockApi.getComponent);

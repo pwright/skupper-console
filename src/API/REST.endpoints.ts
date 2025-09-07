@@ -11,6 +11,7 @@ import { apiEndpoints, API_URL } from '../config/api';
  */
 export const getUser = (): string => `${API_URL}/user`;
 export const logout = (): string => `${API_URL}/logout?nonce=${Date.now()}`;
+export const getVan = (): string => `${API_URL}/van`;
 
 /**
  * Site-related endpoints.

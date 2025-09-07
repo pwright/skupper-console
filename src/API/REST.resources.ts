@@ -32,7 +32,8 @@ import {
   getAllProcessPairs,
   getServiceById,
   getUser,
-  logout
+  logout,
+  getVan
 } from './REST.endpoints';
 import { aggregateDistinctPairs, aggregateLinksBySite } from './REST.utils';
 import {
@@ -50,7 +51,8 @@ import {
   ApplicationFlowResponse,
   ListenerResponse,
   ConnectorResponse,
-  TransportFlowResponse
+  TransportFlowResponse,
+  VanResponse
 } from '../types/REST.interfaces';
 
 // API Service: A collection of API call methods for different resource types.
@@ -62,6 +64,10 @@ export const RESTApi = {
   fetchUser: async (): Promise<UserResponse> => fetchApiData(getUser()),
 
   // === SITES APIs ===
+
+  // === VAN APIs ===
+  fetchVan: async (options?: QueryFilters): Promise<ApiResponse<VanResponse[]>> =>
+    fetchApiDataWithMapper(getVan(), options),
   fetchSites: async (options?: QueryFilters): Promise<ApiResponse<SiteResponse[]>> =>
     fetchApiDataWithMapper(getAllSites(), options),
 

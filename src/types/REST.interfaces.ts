@@ -51,6 +51,15 @@ export interface UserResponse {
   authType: 'internal' | 'openshift';
 }
 
+export interface VanResponse {
+  vanName: string;
+  identity: string;
+  routerCount: number;
+  siteCount: number;
+  version: string;
+  status: string;
+}
+
 export interface SiteResponse extends BaseResponse {
   name: string;
   namespace: string;

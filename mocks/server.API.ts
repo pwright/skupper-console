@@ -13,7 +13,8 @@ import {
   PairsResponse,
   ApplicationFlowResponse,
   ConnectorResponse,
-  ListenerResponse
+  ListenerResponse,
+  VanResponse
 } from '../src/types/REST.interfaces';
 
 interface ApiProps {
@@ -37,6 +38,7 @@ const httpRequests = loadData<ApplicationFlowResponse>('HTTP_REQUESTS');
 const links = loadData<RouterLinkResponse>('LINKS');
 const listeners = loadData<ListenerResponse>('LISTENERS');
 const connectors = loadData<ConnectorResponse>('CONNECTORS');
+const van = loadData<VanResponse>('VAN');
 
 // api functions
 export const MockApi = {
@@ -50,6 +52,10 @@ export const MockApi = {
   }),
 
   logout: () => ({}),
+
+  getVan: () => ({
+    results: van.results
+  }),
 
   getSites: (_: unknown, { url }: ApiProps) => {
     const sitesForPerfTests = ITEM_COUNT ? mockSitesForPerf : [];

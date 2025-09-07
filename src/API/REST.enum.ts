@@ -1,5 +1,6 @@
 export enum RestResources {
   Sites = 'sites',
+  Van = 'van',
   RouterLinks = 'routerlinks',
   Components = 'components',
   Processes = 'processes',

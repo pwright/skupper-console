@@ -9,7 +9,7 @@ import processesData from './data/PROCESSES.json';
 import servicesData from './data/SERVICES.json';
 import sitePairsData from './data/SITE_PAIRS.json';
 import sitesData from './data/SITES.json';
-import tcpConnectionsData from './data/TCP_CONNECTIONS.json';
+import { loadAllVanData } from './vanLoader';
 import {
   SiteResponse,
   ComponentResponse,
@@ -20,7 +20,8 @@ import {
   ConnectorResponse,
   ApplicationFlowResponse,
   RouterLinkResponse,
-  ListenerResponse
+  ListenerResponse,
+  VanResponse
 } from '../src/types/REST.interfaces';
 
 type SitesData = SiteResponse[];
@@ -55,6 +56,7 @@ export type DataMap = {
   LINKS: DataEntry<RouterLinkResponse>;
   LISTENERS: DataEntry<ListenerResponse>;
   CONNECTORS: DataEntry<ConnectorResponse>;
+  VAN: DataEntry<VanResponse>;
 };
 
 const createDataEntry = <T>(data: T[] | { results: T[] } | undefined | null): DataEntry<T> => {
@@ -75,11 +77,12 @@ const dataMap: DataMap = {
   SITE_PAIRS: createDataEntry<PairsResponse>(sitePairsData as unknown as SitePairsData),
   PROCESS_PAIRS: createDataEntry<ProcessPairsResponse>(processPairsData as unknown as ProcessPairsData),
   SERVICES: createDataEntry<ServiceResponse>(servicesData as unknown as ServicesData),
-  TCP_CONNECTIONS: createDataEntry<ConnectorResponse>(tcpConnectionsData as unknown as TcpConnectionsData),
+  TCP_CONNECTIONS: createDataEntry<ConnectorResponse>(connectorsData as unknown as TcpConnectionsData),
   HTTP_REQUESTS: createDataEntry<ApplicationFlowResponse>(httpRequestsData as unknown as HttpRequestsData),
   LINKS: createDataEntry<RouterLinkResponse>(linksData as unknown as LinksData),
   LISTENERS: createDataEntry<ListenerResponse>(listenersData as unknown as ListenersData),
-  CONNECTORS: createDataEntry<ConnectorResponse>(connectorsData as unknown as ConnectorsData)
+  CONNECTORS: createDataEntry<ConnectorResponse>(connectorsData as unknown as ConnectorsData),
+  VAN: createDataEntry<VanResponse>(loadAllVanData())
 };
 
 export { dataMap };
