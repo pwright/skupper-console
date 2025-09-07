@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "destinationId": "c2d3e4f5-g6h7-8901-cdef-123456789012",
+      "destinationName": "catalog-site",
+      "endTime": 0,
+      "identity": "k6l7m8n9-o0p1-2345-6789-012345678901",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "b1c2d3e4-f5g6-7890-bcde-f12345678901",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "d3e4f5g6-h7i8-9012-def0-234567890123",
+      "destinationName": "ordering-site",
+      "endTime": 0,
+      "identity": "l7m8n9o0-p1q2-3456-7890-123456789012",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "b1c2d3e4-f5g6-7890-bcde-f12345678901",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "e4f5g6h7-i8j9-0123-ef01-345678901234",
+      "destinationName": "payment-site",
+      "endTime": 0,
+      "identity": "m8n9o0p1-q2r3-4567-8901-234567890123",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "d3e4f5g6-h7i8-9012-def0-234567890123",
+      "sourceName": "ordering-site",
+      "startTime": 1704067200000
+    }
+  ]
+}

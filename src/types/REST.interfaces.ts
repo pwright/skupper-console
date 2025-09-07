@@ -52,6 +52,7 @@ export interface UserResponse {
 }
 
 export interface VanResponse {
+  traffic?: string;
   vanName: string;
   identity: string;
   routerCount: number;

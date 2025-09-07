@@ -1,8 +1,8 @@
 {
   "results": [
     {
-      "vanName": "default",
-      "identity": "bookinfo-van-4f8a-9b2c-1d3e-5f6a7b8c9d0e",
+      "vanName": "trainticket-van",
+      "identity": "t1r2a3i4n5t6i7c8k9-0123456789ab",
       "routerCount": 4,
       "siteCount": 4,
       "version": "2.1.1",

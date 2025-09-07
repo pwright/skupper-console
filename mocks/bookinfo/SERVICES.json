@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "connectorCount": 2,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "bookinfo-productpage-svc-001",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "productpage",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1733493698912135
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "bookinfo-details-svc-002",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "details",
+      "observedApplicationProtocols": ["http2"],
+      "protocol": "tcp",
+      "startTime": 1733493698081082
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "bookinfo-reviews-svc-003",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "reviews",
+      "observedApplicationProtocols": ["http2"],
+      "protocol": "tcp",
+      "startTime": 1733493697285137
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "bookinfo-ratings-svc-004",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "ratings",
+      "observedApplicationProtocols": ["http2"],
+      "protocol": "tcp",
+      "startTime": 1733493693265429
+    }
+  ]
+}

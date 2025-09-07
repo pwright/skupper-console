@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "routingKey": "productpage",
+      "serviceId": "bookinfo-productpage-svc-001",
+      "destHost": "0.0.0.0",
+      "destPort": "9080",
+      "endTime": 0,
+      "identity": "s86xq:list-001",
+      "name": "productpage",
+      "routerId": "s86xq",
+      "protocol": "tcp",
+      "siteId": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "siteName": "frontend",
+      "startTime": 1733493698912135
+    },
+    {
+      "routingKey": "details",
+      "serviceId": "bookinfo-details-svc-002",
+      "destHost": "0.0.0.0",
+      "destPort": "9080",
+      "endTime": 0,
+      "identity": "s86xr:list-001",
+      "name": "details",
+      "routerId": "s86xr",
+      "protocol": "tcp",
+      "siteId": "bookinfo-details-4f8a-9b2c-1d3e-5f6a7b8c9d02",
+      "siteName": "details",
+      "startTime": 1733493698081082
+    },
+    {
+      "routingKey": "reviews",
+      "serviceId": "bookinfo-reviews-svc-003",
+      "destHost": "0.0.0.0",
+      "destPort": "9080",
+      "endTime": 0,
+      "identity": "s86xs:list-001",
+      "name": "reviews",
+      "routerId": "s86xs",
+      "protocol": "tcp",
+      "siteId": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "siteName": "reviews",
+      "startTime": 1733493697285137
+    },
+    {
+      "routingKey": "ratings",
+      "serviceId": "bookinfo-ratings-svc-004",
+      "destHost": "0.0.0.0",
+      "destPort": "9080",
+      "endTime": 0,
+      "identity": "s86xt:list-001",
+      "name": "ratings",
+      "routerId": "s86xt",
+      "protocol": "tcp",
+      "siteId": "bookinfo-ratings-4f8a-9b2c-1d3e-5f6a7b8c9d04",
+      "siteName": "ratings",
+      "startTime": 1733493693265429
+    }
+  ]
+}

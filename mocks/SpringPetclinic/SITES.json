@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "w1e2b3s4-i5t6e7-8901-2345-678901234567",
+      "name": "web-site",
+      "namespace": "petclinic",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1p2i3s4-i5t6e7-8901-2345-678901234568",
+      "name": "api-site",
+      "namespace": "petclinic",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "d1a2t3a4-s5i6t7e-8901-2345-678901234569",
+      "name": "data-site",
+      "namespace": "petclinic",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    }
+  ]
+}

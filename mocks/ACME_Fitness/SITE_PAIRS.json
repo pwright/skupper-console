@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "destinationId": "a1p2i3s4-i5t6e7-8901-2345-678901234567",
+      "destinationName": "api-site",
+      "endTime": 0,
+      "identity": "f1r2o3n4t5e6n7d8a9p0-0123456789h1",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "d1a2t3a4-s5i6t7e-8901-2345-678901234568",
+      "destinationName": "data-site",
+      "endTime": 0,
+      "identity": "a1p2i3d4a5t6a7s8i9t0-0123456789h2",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "a1p2i3s4-i5t6e7-8901-2345-678901234567",
+      "sourceName": "api-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "a1n2a3l4y5t6i7c8s9-012345678901234567",
+      "destinationName": "analytics-site",
+      "endTime": 0,
+      "identity": "a1p2i3a4n5a6l7y8t9i0-0123456789h3",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "a1p2i3s4-i5t6e7-8901-2345-678901234567",
+      "sourceName": "api-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "a1n2a3l4y5t6i7c8s9-012345678901234567",
+      "destinationName": "analytics-site",
+      "endTime": 0,
+      "identity": "d1a2t3a4a5n6a7l8y9t0-0123456789h4",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "d1a2t3a4-s5i6t7e-8901-2345-678901234568",
+      "sourceName": "data-site",
+      "startTime": 1704067200000
+    }
+  ]
+}

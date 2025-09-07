@@ -1,0 +1,124 @@
+{
+  "results": [
+    {
+      "address": "train-service",
+      "host": "10.243.0.10",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "t1r2a3i4n5s6e7-0123456789e7",
+      "serviceName": "train-service",
+      "siteId": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "siteName": "booking-site"
+    },
+    {
+      "address": "route-service",
+      "host": "10.243.0.11",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "r1o2u3t4e5s6e7-0123456789e8",
+      "serviceName": "route-service",
+      "siteId": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "siteName": "booking-site"
+    },
+    {
+      "address": "station-service",
+      "host": "10.243.0.12",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "s1t2a3t4i5o6n7-0123456789e9",
+      "serviceName": "station-service",
+      "siteId": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "siteName": "booking-site"
+    },
+    {
+      "address": "travel-service",
+      "host": "10.243.0.13",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "t1r2a3v4e5l6s7-0123456789f0",
+      "serviceName": "travel-service",
+      "siteId": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "siteName": "booking-site"
+    },
+    {
+      "address": "order-service",
+      "host": "10.243.0.20",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "o1r2d3e4r5s6e7-0123456789f1",
+      "serviceName": "order-service",
+      "siteId": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "siteName": "booking-site"
+    },
+    {
+      "address": "payment-service",
+      "host": "10.243.0.30",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "p1a2y3m4e5n6t7-0123456789f2",
+      "serviceName": "payment-service",
+      "siteId": "p1a2y3m4e5n6t7s8i9t0e1-012345678901234568",
+      "siteName": "payment-site"
+    },
+    {
+      "address": "user-service",
+      "host": "10.243.0.40",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1s2e3r4s5e6r7-0123456789f3",
+      "serviceName": "user-service",
+      "siteId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "siteName": "data-site"
+    },
+    {
+      "address": "contact-service",
+      "host": "10.243.0.41",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "c1o2n3t4a5c6t7-0123456789f4",
+      "serviceName": "contact-service",
+      "siteId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "siteName": "data-site"
+    },
+    {
+      "address": "notification-service",
+      "host": "10.243.0.42",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "n1o2t3i4f5y6s7-0123456789f5",
+      "serviceName": "notification-service",
+      "siteId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "siteName": "data-site"
+    },
+    {
+      "address": "config-service",
+      "host": "10.243.0.50",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "c1o2n3f4i5g6s7-0123456789f6",
+      "serviceName": "config-service",
+      "siteId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "siteName": "frontend-site"
+    },
+    {
+      "address": "security-service",
+      "host": "10.243.0.51",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "s1e2c3u4r5i6t7-0123456789f7",
+      "serviceName": "security-service",
+      "siteId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "siteName": "frontend-site"
+    },
+    {
+      "address": "admin-service",
+      "host": "10.243.0.52",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "a1d2m3i4n5s6e7-0123456789f8",
+      "serviceName": "admin-service",
+      "siteId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "siteName": "frontend-site"
+    }
+  ]
+}

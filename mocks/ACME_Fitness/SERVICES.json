@@ -1,0 +1,136 @@
+{
+  "results": [
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-f5r6o7n8t9e0-0123456789ab",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-frontend",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 6,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-a5p6i7g8a9t0-0123456789ac",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-api-gateway",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-u5s6e7r8s9e0-0123456789ad",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-user-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-w5o6r7k8o9u0-0123456789ae",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-workout-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-n5u6t7r8i9t0-0123456789af",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-nutrition-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-s5o6c7i8a9l0-0123456789b0",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-social-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-p5a6y7m8e9n0-0123456789b1",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-payment-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-n5o6t7i8f9i0-0123456789b2",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-notification-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-a5n6a7l8y9t0-0123456789b3",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-analytics-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-c5o6n7f8i9g0-0123456789b4",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-config-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1c2m3e4-d5i6s7c8o9v0-0123456789b5",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "acme-discovery-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    }
+  ]
+}

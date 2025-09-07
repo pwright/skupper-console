@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "cost": 8,
+      "destinationRouterId": "api-router",
+      "destinationRouterName": "api-router",
+      "destinationSiteId": "a1p2i3s4-i5t6e7-8901-2345-678901234568",
+      "destinationSiteName": "api-site",
+      "endTime": 0,
+      "identity": "gateway:8001",
+      "name": "web-api-link",
+      "octetCount": 0,
+      "octetReverseCount": 0,
+      "role": "inter-router",
+      "routerAccessId": "access-001",
+      "routerId": "gateway",
+      "routerName": "web-router",
+      "sourceSiteId": "w1e2b3s4-i5t6e7-8901-2345-678901234567",
+      "sourceSiteName": "web-site",
+      "startTime": 1704067200000,
+      "status": "up"
+    },
+    {
+      "cost": 12,
+      "destinationRouterId": "data-router",
+      "destinationRouterName": "data-router",
+      "destinationSiteId": "d1a2t3a4-s5i6t7e-8901-2345-678901234569",
+      "destinationSiteName": "data-site",
+      "endTime": 0,
+      "identity": "api-router:8001",
+      "name": "api-data-link",
+      "octetCount": 0,
+      "octetReverseCount": 0,
+      "role": "inter-router",
+      "routerAccessId": "access-002",
+      "routerId": "api-router",
+      "routerName": "api-router",
+      "sourceSiteId": "a1p2i3s4-i5t6e7-8901-2345-678901234568",
+      "sourceSiteName": "api-site",
+      "startTime": 1704067200000,
+      "status": "up"
+    }
+  ]
+}

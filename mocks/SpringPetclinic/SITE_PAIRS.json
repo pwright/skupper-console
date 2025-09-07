@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "destinationId": "a1p2i3s4-i5t6e7-8901-2345-678901234568",
+      "destinationName": "api-site",
+      "endTime": 0,
+      "identity": "w1e2b3a4p5i6s7i8t9e0-0123456789e1",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "w1e2b3s4-i5t6e7-8901-2345-678901234567",
+      "sourceName": "web-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "d1a2t3a4-s5i6t7e-8901-2345-678901234569",
+      "destinationName": "data-site",
+      "endTime": 0,
+      "identity": "a1p2i3d4a5t6a7s8i9t0-0123456789e2",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "a1p2i3s4-i5t6e7-8901-2345-678901234568",
+      "sourceName": "api-site",
+      "startTime": 1704067200000
+    }
+  ]
+}

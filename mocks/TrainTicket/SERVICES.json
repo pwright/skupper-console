@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "t1r2a3i4n5s6e7-0123456789e7",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "train-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "r1o2u3t4e5s6e7-0123456789e8",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "route-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "s1t2a3t4i5o6n7-0123456789e9",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "station-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "t1r2a3v4e5l6s7-0123456789f0",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "travel-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "o1r2d3e4r5s6e7-0123456789f1",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "order-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "p1a2y3m4e5n6t7-0123456789f2",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "payment-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "u1s2e3r4s5e6r7-0123456789f3",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "user-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "c1o2n3t4a5c6t7-0123456789f4",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "contact-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "n1o2t3i4f5y6s7-0123456789f5",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "notification-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "c1o2n3f4i5g6s7-0123456789f6",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "config-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "s1e2c3u4r5i6t7-0123456789f7",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "security-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1d2m3i4n5s6e7-0123456789f8",
+      "isBound": true,
+      "listenerCount": 3,
+      "name": "admin-service",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    }
+  ]
+}

@@ -120,6 +120,17 @@ const Dashboard = function () {
                             <strong>Identity:</strong> {van.identity}
                           </div>
                         </GridItem>
+                        {van.traffic && (
+                          <GridItem span={12}>
+                            <div>
+                              <strong>Traffic:</strong> <span style={{
+                                fontFamily: "monospace",
+                                fontSize: "1.2em",
+                                color: "#0066cc"
+                              }}>{van.traffic}</span>
+                            </div>
+                          </GridItem>
+                        )}
                       </Grid>
                       <div style={{ marginTop: '1rem', textAlign: 'center' }}>
                         <Button 
@@ -137,15 +148,6 @@ const Dashboard = function () {
                 </GridItem>
               ))}
             </Grid>
-          )}
-
-          {/* No Data State */}
-          {!loading && !error && vanData.length === 0 && (
-            <Card>
-              <CardBody>
-                <p>No Virtual Application Networks found.</p>
-              </CardBody>
-            </Card>
           )}
         </div>
       }

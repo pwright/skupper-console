@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "destinationId": "bookinfo-details-4f8a-9b2c-1d3e-5f6a7b8c9d02",
+      "destinationName": "details",
+      "endTime": 0,
+      "identity": "bookinfo-frontend-details-site-pair-001",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "sourceName": "frontend",
+      "startTime": 1733493698912135
+    },
+    {
+      "destinationId": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "destinationName": "reviews",
+      "endTime": 0,
+      "identity": "bookinfo-frontend-reviews-site-pair-002",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "sourceName": "frontend",
+      "startTime": 1733493698912136
+    },
+    {
+      "destinationId": "bookinfo-ratings-4f8a-9b2c-1d3e-5f6a7b8c9d04",
+      "destinationName": "ratings",
+      "endTime": 0,
+      "identity": "bookinfo-reviews-ratings-site-pair-003",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "sourceName": "reviews",
+      "startTime": 1733493698912139
+    }
+  ]
+}

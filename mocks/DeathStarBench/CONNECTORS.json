@@ -1,0 +1,194 @@
+{
+  "results": [
+    {
+      "address": "social-graph-service",
+      "host": "10.243.0.10",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "s1o2c3i4a5l6g7-0123456789e8",
+      "serviceName": "social-graph-service",
+      "siteId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "siteName": "social-site"
+    },
+    {
+      "address": "compose-post-service",
+      "host": "10.243.0.11",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "c1o2m3p4o5s6e7-0123456789e9",
+      "serviceName": "compose-post-service",
+      "siteId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "siteName": "social-site"
+    },
+    {
+      "address": "user-timeline-service",
+      "host": "10.243.0.12",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1s2e3r4t5i6m7-0123456789f0",
+      "serviceName": "user-timeline-service",
+      "siteId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "siteName": "social-site"
+    },
+    {
+      "address": "home-timeline-service",
+      "host": "10.243.0.13",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "h1o2m3e4t5i6m7-0123456789f1",
+      "serviceName": "home-timeline-service",
+      "siteId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "siteName": "social-site"
+    },
+    {
+      "address": "user-service",
+      "host": "10.243.0.20",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1s2e3r4s5e6r7-0123456789f2",
+      "serviceName": "user-service",
+      "siteId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "siteName": "data-site"
+    },
+    {
+      "address": "post-storage-service",
+      "host": "10.243.0.21",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "p1o2s3t4s5t6o7-0123456789f3",
+      "serviceName": "post-storage-service",
+      "siteId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "siteName": "data-site"
+    },
+    {
+      "address": "media-service",
+      "host": "10.243.0.30",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "m1e2d3i4a5s6e7-0123456789f4",
+      "serviceName": "media-service",
+      "siteId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "siteName": "media-site"
+    },
+    {
+      "address": "text-service",
+      "host": "10.243.0.31",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "t1e2x3t4s5e6r7-0123456789f5",
+      "serviceName": "text-service",
+      "siteId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "siteName": "media-site"
+    },
+    {
+      "address": "unique-id-service",
+      "host": "10.243.0.32",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1n2i3q4u5e6i7-0123456789f6",
+      "serviceName": "unique-id-service",
+      "siteId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "siteName": "media-site"
+    },
+    {
+      "address": "user-mention-service",
+      "host": "10.243.0.33",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1s2e3r4m5e6n7-0123456789f7",
+      "serviceName": "user-mention-service",
+      "siteId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "siteName": "media-site"
+    },
+    {
+      "address": "url-shorten-service",
+      "host": "10.243.0.34",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1r2l3s4h5o6r7-0123456789f8",
+      "serviceName": "url-shorten-service",
+      "siteId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "siteName": "media-site"
+    },
+    {
+      "address": "hotel-reservation-service",
+      "host": "10.243.0.40",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "h1o2t3e4l5r6e7-0123456789g0",
+      "serviceName": "hotel-reservation-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "search-service",
+      "host": "10.243.0.41",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "s1e2a3r4c5h6s7-0123456789g1",
+      "serviceName": "search-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "geo-service",
+      "host": "10.243.0.42",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "g1e2o3s4e5r6v7-0123456789g2",
+      "serviceName": "geo-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "rate-service",
+      "host": "10.243.0.43",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "r1a2t3e4s5e6r7-0123456789g3",
+      "serviceName": "rate-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "profile-service",
+      "host": "10.243.0.44",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "p1r2o3f4i5l6e7-0123456789g4",
+      "serviceName": "profile-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "recommendation-service",
+      "host": "10.243.0.45",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "r1e2c3o4m5s6e7-0123456789g5",
+      "serviceName": "recommendation-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "reservation-service",
+      "host": "10.243.0.46",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "r1e2s3e4r5v6e7-0123456789g6",
+      "serviceName": "reservation-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    },
+    {
+      "address": "user-reservation-service",
+      "host": "10.243.0.47",
+      "port": 8080,
+      "protocol": "http2",
+      "serviceId": "u1s2e3r4r5e6s7-0123456789g7",
+      "serviceName": "user-reservation-service",
+      "siteId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "siteName": "hotel-site"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "results": [
     {
-      "vanName": "default",
-      "identity": "bookinfo-van-4f8a-9b2c-1d3e-5f6a7b8c9d0e",
+      "vanName": "eshop-van",
+      "identity": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
       "routerCount": 4,
       "siteCount": 4,
       "version": "2.1.1",

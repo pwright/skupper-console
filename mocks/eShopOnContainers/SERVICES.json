@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "f5g6h7i8-j9k0-1234-f012-456789012345",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "webmvc",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 2,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "g6h7i8j9-k0l1-2345-0123-567890123456",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "catalog-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "h7i8j9k0-l1m2-3456-1234-678901234567",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "basket-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "i8j9k0l1-m2n3-4567-2345-789012345678",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "identity-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "j9k0l1m2-n3o4-5678-3456-890123456789",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "ordering-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "k0l1m2n3-o4p5-6789-4567-901234567890",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "payment-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "l1m2n3o4-p5q6-7890-5678-012345678901",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "webhooks-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "m2n3o4p5-q6r7-8901-6789-123456789012",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "notification-api",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    }
+  ]
+}

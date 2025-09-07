@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "n3o4p5q6-r7s8-9012-7890-234567890123",
+      "name": "webmvc-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "o4p5q6r7-s8t9-0123-8901-345678901234",
+      "name": "catalog-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "p5q6r7s8-t9u0-1234-9012-456789012345",
+      "name": "basket-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "q6r7s8t9-u0v1-2345-0123-567890123456",
+      "name": "identity-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "r7s8t9u0-v1w2-3456-1234-678901234567",
+      "name": "ordering-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "s8t9u0v1-w2x3-4567-2345-789012345678",
+      "name": "payment-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "t9u0v1w2-x3y4-5678-3456-890123456789",
+      "name": "webhooks-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "u0v1w2x3-y4z5-6789-4567-901234567890",
+      "name": "notification-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    }
+  ]
+}

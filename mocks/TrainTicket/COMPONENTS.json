@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "t1r2a3i4n5s6e7-0123456789e7",
+      "name": "train-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "r1o2u3t4e5s6e7-0123456789e8",
+      "name": "route-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "s1t2a3t4i5o6n7-0123456789e9",
+      "name": "station-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "t1r2a3v4e5l6s7-0123456789f0",
+      "name": "travel-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "o1r2d3e4r5s6e7-0123456789f1",
+      "name": "order-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "p1a2y3m4e5n6t7-0123456789f2",
+      "name": "payment-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "u1s2e3r4s5e6r7-0123456789f3",
+      "name": "user-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "c1o2n3t4a5c6t7-0123456789f4",
+      "name": "contact-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "n1o2t3i4f5y6s7-0123456789f5",
+      "name": "notification-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "c1o2n3f4i5g6s7-0123456789f6",
+      "name": "config-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "s1e2c3u4r5i6t7-0123456789f7",
+      "name": "security-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1d2m3i4n5s6e7-0123456789f8",
+      "name": "admin-service",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    }
+  ]
+}

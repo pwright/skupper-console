@@ -1,0 +1,8 @@
+{"results":[
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"frontend-to-social-link","siteId":"s1o2c3i4a5l6s7i8t9-012345678901234567","siteName":"social-site"},
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"frontend-to-media-link","siteId":"m1e2d3i4a5s6i7t8e9-012345678901234568","siteName":"media-site"},
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"frontend-to-hotel-link","siteId":"h1o2t3e4l5s6i7t8e9-012345678901234569","siteName":"hotel-site"},
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"social-to-data-link","siteId":"d1a2t3a4s5i6t7e8-012345678901234570","siteName":"data-site"},
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"media-to-data-link","siteId":"d1a2t3a4s5i6t7e8-012345678901234570","siteName":"data-site"},
+  {"cost":1,"direction":"incoming","linkCost":1,"linkStatus":"active","name":"social-to-media-link","siteId":"m1e2d3i4a5s6i7t8e9-012345678901234568","siteName":"media-site"}
+]}

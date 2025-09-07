@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "destinationId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "destinationName": "social-site",
+      "endTime": 0,
+      "identity": "f1r2o3n4t5e6n7d8s9-0123456789j2",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "destinationName": "media-site",
+      "endTime": 0,
+      "identity": "f1r2o3n4t5e6n7d8m9-0123456789j3",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "h1o2t3e4l5s6i7t8e9-012345678901234569",
+      "destinationName": "hotel-site",
+      "endTime": 0,
+      "identity": "f1r2o3n4t5e6n7d8h9-0123456789j4",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "sourceName": "frontend-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "destinationName": "data-site",
+      "endTime": 0,
+      "identity": "s1o2c3i4a5l6d7a8-0123456789j5",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "sourceName": "social-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "destinationName": "data-site",
+      "endTime": 0,
+      "identity": "m1e2d3i4a5d6a7-0123456789j6",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "sourceName": "media-site",
+      "startTime": 1704067200000
+    },
+    {
+      "destinationId": "m1e2d3i4a5s6i7t8e9-012345678901234568",
+      "destinationName": "media-site",
+      "endTime": 0,
+      "identity": "s1o2c3i4a5l6m7e8-0123456789j7",
+      "pairType": "SITE",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "s1o2c3i4a5l6s7i8t9-012345678901234567",
+      "sourceName": "social-site",
+      "startTime": 1704067200000
+    }
+  ]
+}

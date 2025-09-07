@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "w1e2b3c4-o5m6p7o8n9e0-0123456789b3",
+      "name": "petclinic-web-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1p2i3g4-a5t6e7w8a9y0-0123456789b4",
+      "name": "petclinic-api-gateway-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "c1u2s3t4-o5m6e7r8s9c0-0123456789b5",
+      "name": "petclinic-customers-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "v1e2t3s4-c5o6m7p8o9n0-0123456789b6",
+      "name": "petclinic-vets-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "v1i2s3i4t5s6c7o8m9p0-0123456789b7",
+      "name": "petclinic-visits-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "p1e2t3s4-c5o6m7p8o9n0-0123456789b8",
+      "name": "petclinic-pets-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "c1o2n3f4-i5g6c7o8m9p0-0123456789b9",
+      "name": "petclinic-config-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "d1i2s3c4-o5v6e7r8y9c0-0123456789c0",
+      "name": "petclinic-discovery-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    }
+  ]
+}

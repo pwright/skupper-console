@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "b1c2d3e4-f5g6-7890-bcde-f12345678901",
+      "name": "frontend-site",
+      "namespace": "eshop",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "c2d3e4f5-g6h7-8901-cdef-123456789012",
+      "name": "catalog-site",
+      "namespace": "eshop",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "d3e4f5g6-h7i8-9012-def0-234567890123",
+      "name": "ordering-site",
+      "namespace": "eshop",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "e4f5g6h7-i8j9-0123-ef01-345678901234",
+      "name": "payment-site",
+      "namespace": "eshop",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    }
+  ]
+}

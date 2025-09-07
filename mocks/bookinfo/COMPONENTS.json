@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "bookinfo-productpage-comp-001",
+      "name": "productpage",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1733493698912135
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-details-comp-002",
+      "name": "details",
+      "processCount": 1,
+      "role": "remote",
+      "startTime": 1733493698081082
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-reviews-comp-003",
+      "name": "reviews",
+      "processCount": 3,
+      "role": "remote",
+      "startTime": 1733493697285137
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-ratings-comp-004",
+      "name": "ratings",
+      "processCount": 1,
+      "role": "remote",
+      "startTime": 1733493693265429
+    }
+  ]
+}

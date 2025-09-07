@@ -6,7 +6,8 @@
       "routerCount": 3,
       "siteCount": 3,
       "version": "2.2.0",
-      "status": "up"
+      "status": "up",
+      "traffic": "▁▂▃▄▅▆█"
     }
   ]
 }

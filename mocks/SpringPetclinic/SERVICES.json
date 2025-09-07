@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "p1e2t3c4-l5i6n7i8c9-0123456789ab",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-web",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 4,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "a1p2i3g4-a5t6e7w8a9y-0123456789ac",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-api-gateway",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "c1u2s3t4-o5m6e7r8s9-0123456789ad",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-customers",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "v1e2t3s4-s5e6r7v8i9c-0123456789ae",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-vets",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "v1i2s3i4t5s6s7e8r9-0123456789af",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-visits",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "p1e2t3s4-s5e6r7v8i9c-0123456789b0",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-pets",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "c1o2n3f4-i5g6s7e8r9v-0123456789b1",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-config",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    },
+    {
+      "connectorCount": 1,
+      "endTime": 0,
+      "hasListener": true,
+      "identity": "d1i2s3c4-o5v6e7r8y9-0123456789b2",
+      "isBound": true,
+      "listenerCount": 1,
+      "name": "petclinic-discovery",
+      "observedApplicationProtocols": ["http2", "http1.1"],
+      "protocol": "tcp",
+      "startTime": 1704067200000
+    }
+  ]
+}

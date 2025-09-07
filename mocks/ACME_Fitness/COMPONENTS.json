@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-f5r6o7n8t9e0-0123456789c1",
+      "name": "acme-frontend-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-a5p6i7g8a9t0-0123456789c2",
+      "name": "acme-api-gateway-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-u5s6e7r8s9e0-0123456789c3",
+      "name": "acme-user-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-w5o6r7k8o9u0-0123456789c4",
+      "name": "acme-workout-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-n5u6t7r8i9t0-0123456789c5",
+      "name": "acme-nutrition-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-s5o6c7i8a9l0-0123456789c6",
+      "name": "acme-social-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-p5a6y7m8e9n0-0123456789c7",
+      "name": "acme-payment-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-n5o6t7i8f9i0-0123456789c8",
+      "name": "acme-notification-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-a5n6a7l8y9t0-0123456789c9",
+      "name": "acme-analytics-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-c5o6n7f8i9g0-0123456789d0",
+      "name": "acme-config-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "a1c2m3e4-d5i6s7c8o9v0-0123456789d1",
+      "name": "acme-discovery-service-component",
+      "processCount": 1,
+      "role": "external",
+      "startTime": 1704067200000
+    }
+  ]
+}

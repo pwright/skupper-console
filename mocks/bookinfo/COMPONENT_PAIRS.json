@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "destinationId": "bookinfo-details-comp-002",
+      "destinationName": "details",
+      "destinationSiteId": "bookinfo-details-4f8a-9b2c-1d3e-5f6a7b8c9d02",
+      "destinationSiteName": "details",
+      "endTime": 0,
+      "identity": "bookinfo-productpage-details-comp-pair-001",
+      "pairType": "PROCESS_GROUP",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-productpage-comp-001",
+      "sourceName": "productpage",
+      "sourceSiteId": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "sourceSiteName": "frontend",
+      "startTime": 1733493698912135
+    },
+    {
+      "destinationId": "bookinfo-reviews-comp-003",
+      "destinationName": "reviews",
+      "destinationSiteId": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "destinationSiteName": "reviews",
+      "endTime": 0,
+      "identity": "bookinfo-productpage-reviews-comp-pair-002",
+      "pairType": "PROCESS_GROUP",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-productpage-comp-001",
+      "sourceName": "productpage",
+      "sourceSiteId": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "sourceSiteName": "frontend",
+      "startTime": 1733493698912136
+    },
+    {
+      "destinationId": "bookinfo-ratings-comp-004",
+      "destinationName": "ratings",
+      "destinationSiteId": "bookinfo-ratings-4f8a-9b2c-1d3e-5f6a7b8c9d04",
+      "destinationSiteName": "ratings",
+      "endTime": 0,
+      "identity": "bookinfo-reviews-ratings-comp-pair-003",
+      "pairType": "PROCESS_GROUP",
+      "protocol": "http2",
+      "recordCount": 0,
+      "sourceId": "bookinfo-reviews-comp-003",
+      "sourceName": "reviews",
+      "sourceSiteId": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "sourceSiteName": "reviews",
+      "startTime": 1733493698912139
+    }
+  ]
+}

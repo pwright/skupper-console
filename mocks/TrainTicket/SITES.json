@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "f1r2o3n4t5e6n7d8-9012-3456-789012345678",
+      "name": "frontend-site",
+      "namespace": "trainticket-frontend",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "b1o2o3k4i5n6g7s8i9t0e1-012345678901234567",
+      "name": "booking-site",
+      "namespace": "trainticket-booking",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "p1a2y3m4e5n6t7s8i9t0e1-012345678901234568",
+      "name": "payment-site",
+      "namespace": "trainticket-payment",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    },
+    {
+      "endTime": 0,
+      "identity": "d1a2t3a4s5i6t7e8-012345678901234570",
+      "name": "data-site",
+      "namespace": "trainticket-data",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1704067200000
+    }
+  ]
+}

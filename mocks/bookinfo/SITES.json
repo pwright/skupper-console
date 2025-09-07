@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "endTime": 0,
+      "identity": "bookinfo-frontend-4f8a-9b2c-1d3e-5f6a7b8c9d01",
+      "name": "frontend",
+      "namespace": "bookinfo-frontend",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1733493767000000
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-details-4f8a-9b2c-1d3e-5f6a7b8c9d02",
+      "name": "details",
+      "namespace": "bookinfo-details",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1733493674000000
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-reviews-4f8a-9b2c-1d3e-5f6a7b8c9d03",
+      "name": "reviews",
+      "namespace": "bookinfo-reviews",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1733493473000000
+    },
+    {
+      "endTime": 0,
+      "identity": "bookinfo-ratings-4f8a-9b2c-1d3e-5f6a7b8c9d04",
+      "name": "ratings",
+      "namespace": "bookinfo-ratings",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
+      "routerCount": 1,
+      "version": "2.0.0-preview-1-66-gdbd5e3e",
+      "startTime": 1733493000000000
+    }
+  ]
+}
