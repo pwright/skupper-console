@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "vanName": "Bookinfo",
+      "vanName": "bookinfo",
       "identity": "bookinfo-van-4f8a-9b2c-1d3e-5f6a7b8c9d0e",
       "routerCount": 4,
       "siteCount": 4,

@@ -1,0 +1,24 @@
+{
+  "vans": [
+    {
+      "name": "default",
+      "directory": "data",
+      "displayName": "Default VAN"
+    },
+    {
+      "name": "bookinfo",
+      "directory": "bookinfo", 
+      "displayName": "Bookinfo VAN"
+    },
+    {
+      "name": "springpetclinic",
+      "directory": "SpringPetclinic",
+      "displayName": "Spring Petclinic VAN"
+    },
+    {
+      "name": "acmefitness",
+      "directory": "ACME_Fitness",
+      "displayName": "Acme Fitness VAN"
+    }
+  ]
+}

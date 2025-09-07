@@ -1,4 +1,4 @@
-import { loadAllVanData, getVanSpecificData } from './vanLoader';
+import { loadAllVanDataSync, getVanSpecificData } from './vanLoader';
 import {
   SiteResponse,
   ComponentResponse,
@@ -73,7 +73,7 @@ export const createVanSpecificDataMap = (vanName: string = 'default'): DataMap =
     LINKS: createDataEntry<RouterLinkResponse>(getVanSpecificData(vanName, 'LINKS') as unknown as LinksData),
     LISTENERS: createDataEntry<ListenerResponse>(getVanSpecificData(vanName, 'LISTENERS') as unknown as ListenersData),
     CONNECTORS: createDataEntry<ConnectorResponse>(getVanSpecificData(vanName, 'CONNECTORS') as unknown as ConnectorsData),
-    VAN: createDataEntry<VanResponse>(loadAllVanData())
+    VAN: createDataEntry<VanResponse>(loadAllVanDataSync())
   };
 };
 

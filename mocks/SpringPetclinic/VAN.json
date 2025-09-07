@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "vanName": "petclinic-van",
+      "vanName": "springpetclinic",
       "identity": "p1e2t3c4-l5i6n7i8c9-0123456789ab",
       "routerCount": 3,
       "siteCount": 3,
