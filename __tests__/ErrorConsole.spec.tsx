@@ -65,7 +65,7 @@ describe('ErrorConsole', () => {
         message: 'Network error occurred',
         onReset: resetErrorBoundary
       }),
-      expect.anything()
+      undefined
     );
   });
 
@@ -91,7 +91,7 @@ describe('ErrorConsole', () => {
         message: 'Failed to fetch',
         onReset: resetErrorBoundary
       }),
-      expect.anything()
+      undefined
     );
   });
 
