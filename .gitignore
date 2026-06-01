@@ -1,0 +1,38 @@
+# App
+build
+coverage
+node_modules
+
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+
+# Logs and temporary files
+*.log
+*.tmp
+temp/
+tmp/
+
+# IDEs and Editors
+.c9/
+.classpath
+.eslintcache
+.idea/
+.project
+.settings/
+.sublime-workspace
+.vscode/
+*.launch
+.history
+*.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# System Files
+.DS_Store
+
+# Vim
+*.swp

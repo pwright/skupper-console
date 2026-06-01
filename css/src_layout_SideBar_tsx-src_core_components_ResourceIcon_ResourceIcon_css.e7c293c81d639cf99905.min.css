@@ -1,0 +1,20 @@
+/* Resource icon */
+.sk-resource-icon {
+  background-color: gray;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 4px;
+  min-width: 20px;
+  height: 100%;
+  padding: 0 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+/*# sourceMappingURL=src_layout_SideBar_tsx-src_core_components_ResourceIcon_ResourceIcon_css.e7c293c81d639cf99905.min.css.map*/

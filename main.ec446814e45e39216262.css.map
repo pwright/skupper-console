@@ -1,0 +1,1 @@
+{"version":3,"file":"main.ec446814e45e39216262.css","mappings":"AAAA;;;EAGE,YAAY;AACd","sources":["webpack://skupper-network-console/./src/App.css"],"sourcesContent":["html,\nbody,\n#app {\n  height: 100%;\n}\n"],"names":[],"sourceRoot":""}
