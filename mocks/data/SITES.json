@@ -2,58 +2,27 @@
   "results": [
     {
       "endTime": 0,
-      "identity": "46c2efa0-5fbc-4fe4-bba8-530e775aa2f6",
-      "name": "dallas",
-      "namespace": "vb-boutique-c",
+      "identity": "d52ae717-7e68-4ade-a12d-fcc4c9db4d6b",
+      "name": "my-site",
+      "namespace": "default",
       "platform": "kubernetes",
       "provider": "kubernetes",
       "routerCount": 1,
-      "version": "2.0.0-preview-1-66-gdbd5e3e",
-      "startTime": 1733493767000000
+      "startTime": 1780176346000000,
+      "version": "2.2.0-modified"
     },
     {
       "endTime": 0,
-      "identity": "49becd97-6e22-4645-a22f-b5b98c89d827",
-      "name": "london",
-      "namespace": "vb-boutique-b",
-      "platform": "docker",
-      "provider": "docker",
+      "identity": "fae96929-721f-4c11-9ad8-03b9490b0443",
+      "name": "colima",
+      "namespace": "default",
+      "platform": "kubernetes",
+      "provider": "kubernetes",
       "routerCount": 1,
-      "version": "2.0.0-preview-1-66-gdbd5e3e",
-      "startTime": 1733493674000000
-    },
-    {
-      "endTime": 0,
-      "identity": "631f1ef0-b59e-4ed3-a98e-e850b4ca2226",
-      "name": "malaga",
-      "namespace": "vb-boutique-a",
-      "platform": "linux",
-      "provider": "linux",
-      "routerCount": 1,
-      "version": "2.0.0-preview-1-66-gdbd5e3e",
-      "startTime": 1733493473000000
-    },
-    {
-      "endTime": 0,
-      "identity": "12345678-abcd-4321-efgh-87654321abcd",
-      "name": "sidney",
-      "namespace": "vb-boutique-d",
-      "platform": "podman",
-      "provider": "podman",
-      "routerCount": 2,
-      "version": "2.0.0-preview-1-66-gdbd5e3e",
-      "startTime": 1733493000000000
-    },
-    {
-      "endTime": 0,
-      "identity": "12345678-abcd-4321-efgh-876543217777",
-      "name": "paris",
-      "namespace": "vb-boutique-e",
-      "platform": "unknown",
-      "provider": "unknown",
-      "routerCount": 0,
-      "version": "2.0.0-preview-1-66-gdbd5e3e",
-      "startTime": 1733493000000000
+      "startTime": 1780252956000000,
+      "version": "2.2.0-modified"
     }
-  ]
+  ],
+  "count": 2,
+  "timeRangeCount": 2
 }
